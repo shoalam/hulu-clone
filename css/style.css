@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+
+/* Header Area CSS */
+.header{
+    min-height: 530px;
+    max-height: 100vh;
+    background: url(../img/header.jpg) no-repeat center center / cover;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    background-image: linear-gradient( 
+        180deg
+        , rgba(0, 0, 0, 0.76) 15.54%, rgba(0, 0, 0, 0.192) 60.23%, rgba(0, 0, 0, 8e-5) 100% );
+}
+
+.header .nav{
+    text-align: right;
+    padding: 25px 40px;
+    z-index: 2;
+    position: relative;
+}
+
+.header .nav .login-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.header-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 60px 40px;
+    color: #fff;
+}
+
+.header-hero h4{
+    color: #00ed82;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.header-hero img{
+    width: 270px;
+    height: auto;
+}
+
+.header-hero .header-hero-text-1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-hero .header-hero-text-2{
+    font-size: 18px;
+    font-weight: normal;
+}
+.header-hero .hero-btn{
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    min-width: 135px;
+    padding: 20px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 14px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-hero .hero-btn:hover{
+    opacity: 0.8;
+}
+.header-hero .info-text{
+    font-size: 10px;
+    color: #ccc;
+}
+
+/* End of Header Area CSS */
+
+/* call-to-action  */
+
+.call-to-action{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 30px 40px 20px;
+    background: linear-gradient( 
+318.68deg
+ , #0F495C 0%, #0D3640 49.72%, #08141F 100%);
+    align-items: center;
+    gap: 40px;
+}
+
+.call-to-action h3{
+    color: #00ed82;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.call-to-action h4{
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.call-to-action .sub-link{
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+.call-to-action > div:last-child{
+    justify-self: end;
+    align-self: end;
+    text-align: center;
+}
+
+.call-to-action .cta-btn{
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    min-width: 135px;
+    padding: 20px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 14px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.call-to-action .cta-btn:hover{
+    border: 2px solid #fff;
+}
